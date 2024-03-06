@@ -18,7 +18,7 @@ const Ball = (props) => {
         scale={2.75}
         onClick={() => setShowName(!showName)}
       >
-        <icosahedronGeometry args={[1, 1]} />
+        <icosahedronGeometry args={[1, 1]} gl={{preserveDrawingBuffer: true, alpha: true}}/>
         <meshStandardMaterial color='#fff8eb' polygonOffset polygonOffsetFactor={-5} flatShading />
         <Decal map={decal} position={[0, 0, 1]} rotation={[2 * Math.PI, 0, 6.25]} />
         {showName && (
