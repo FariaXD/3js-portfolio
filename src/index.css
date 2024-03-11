@@ -203,3 +203,57 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+/*My additions*/
+.nav-background {
+  background: #36393B;
+  background: -webkit-linear-gradient(-90deg,
+      #36393B 70%,
+      rgba(0, 0, 0, 0) 100%);
+}
+.nav-burger {
+  background: #36393B;
+  background: -webkit-linear-gradient(-90deg,
+      #36393B 50%,
+      rgb(37, 5, 5) 100%);
+}
+.nav-text {
+  color: #acacac;
+}
+
+.text-gold {
+  color: #FF7F11;
+}
+
+.bg-gold{
+  background-color: #FF7F11;
+}
+
+.gold-gradient {
+  background: #FF7F11;
+  background: linear-gradient(-90deg, #FF7F11 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg,
+      #FF7F11 0%,
+      rgba(60, 51, 80, 0) 100%);
+}
+
+.hover\:text-gold:hover {
+  --tw-text-opacity: 1;
+  color: #FF7F11;
+}
+
+.text-prim {
+  color: #FBFAF8;
+}
+
+.text-sec {
+  color: #E7DECD;
+}
+
+.bg-main {
+  background-color: #554640;
+}
+
+.bg-sec {
+  background-color: #36393B;
+}

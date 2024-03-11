@@ -3,32 +3,33 @@
 /* eslint-disable react/no-unknown-property */
 import React, { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, Text } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF("./f1cartest/scene.gltf");
+  const computer = useGLTF("./mcf1/scene.gltf");
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.3} groundColor='black' />
+      <hemisphereLight intensity={0.4} groundColor='black' />
       <spotLight
-        position={[-20, 50, 10]}
+        position={[10, 40, 20]}
         angle={0.12}
         penumbra={1}
         intensity={2}
         castShadow
         shadow-mapSize={1024}
       />
-      <directionalLight position={[3, 2, 1]} intensity={0.5}/>
+      <directionalLight position={[1, 4, 3]} intensity={0.75}/>
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.35 : 0.75}
+        scale={isMobile ? 0.7 : 2}
         position={isMobile ? [0, -3, 0] : [0, -3.25, 0]}
-        rotation={[-0.01, -0.75, -0.1]}
+        rotation={[-0.00, 0.0, -0.0]}
       />
+      
     </mesh>
   );
 };
@@ -74,8 +75,19 @@ const ComputersCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
-
       <Preload all />
+
+      <Text
+            position={[0.0, -1.05, 1.2]} // Adjust position as needed
+            fontSize={0.2}
+            color='#FF7F11'
+            fillOpacity={0.5}
+            fontWeight='3'
+            rotation={[-1, 0.0, 0.0]}
+          >
+        
+        Model by Ajay Gawde
+      </Text>
     </Canvas>
   );
 };

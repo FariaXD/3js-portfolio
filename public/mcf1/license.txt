@@ -1,0 +1,11 @@
+Model Information:
+* title:	McLaren F1LM - Low Poly
+* source:	https://sketchfab.com/3d-models/mclaren-f1lm-low-poly-ed54b4bab2cc4d31a13a2fce89d8e9e2
+* author:	Ajay Gawde (https://sketchfab.com/aagawde)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "McLaren F1LM - Low Poly" (https://sketchfab.com/3d-models/mclaren-f1lm-low-poly-ed54b4bab2cc4d31a13a2fce89d8e9e2) by Ajay Gawde (https://sketchfab.com/aagawde) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
