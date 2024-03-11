@@ -14,8 +14,8 @@ const Tech = () => {
         <h2 className={styles.sectionHeadText}>Technologies</h2>
       </motion.div>      
       <div className='flex flex-row flex-wrap justify-center gap-10 my-4'>
-        {technologies.map((technology) => (
-          <div className='w-28 h-28' key={technology.name}>
+        {technologies.map((technology, i) => (
+          <div className='w-28 h-28' key={i}>
             <BallCanvas icon={technology.icon} name={technology.name} planet={technology.planet}/>
           </div>
         ))}

@@ -20,6 +20,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import java from "./tech/java.png";
+import php from "./tech/php.png";
+import json from "./tech/json.png";
+import andstud from "./tech/andstud.png";
+
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -43,6 +49,10 @@ export {
   docker,
   figma,
   git,
+  andstud,
+  java,
+  php,
+  json,
   html,
   javascript,
   mongodb,

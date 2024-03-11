@@ -7,6 +7,7 @@ const StarWrapper = (Component, idName) =>
   function HOC() {
     return (
       <motion.section
+        key={idName}
         variants={staggerContainer()}
         initial='hidden'
         whileInView='show'
