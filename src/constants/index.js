@@ -63,50 +63,62 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    planet: "./planets/mercury/mercury.glb",
   },
   {
     name: "CSS 3",
     icon: css,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "JavaScript",
     icon: javascript,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "TypeScript",
     icon: typescript,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "React JS",
     icon: reactjs,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "Redux Toolkit",
     icon: redux,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "Node JS",
     icon: nodejs,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "Three JS",
     icon: threejs,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "git",
     icon: git,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "figma",
     icon: figma,
+    planet: "./planets/mercury/scene.gltf",
   },
   {
     name: "docker",
     icon: docker,
+    planet: "./planets/mercury/scene.gltf",
   },
 ];
 
