@@ -1,3 +1,4 @@
+import { three } from "maath";
 import {
   html,
   css,
@@ -5,12 +6,21 @@ import {
   reactjs,
   threejs,
   tailwind,
+  node,
+  xml,
+  vite,
+  bootstrap,
   git,
   figma,
   andstud,
   java,
   php,
   json,
+  python,
+  firebase,
+  mysql,
+  csharp,
+  kotlin,
   web,
   mobile,
   backend,
@@ -62,22 +72,37 @@ const technologies = [
   {
     name:{tech1: "HTML 5", tech2: "CSS 3", tech3:"JavaScript"},
     icon: {icon1:html, icon2:css, icon3:javascript},
-    planet: "./planets/mercury/mercury.glb",
+    planet: "Mercury",
   },
   {
-    name:{tech1: "React", tech2: "Three JS", tech3:"Tailwind CSS"},
-    icon: {icon1:reactjs, icon2:threejs, icon3:tailwind},
-    planet: "./planets/mercury/mercury.glb",
+    name:{tech1: "React", tech2: "Vite", tech3:"Node JS"},
+    icon: {icon1:reactjs, icon2:vite, icon3:node},
+    planet: "Venus",
+  },
+  {
+    name:{tech1: "Python", tech2: "Kotlin", tech3:"C#"},
+    icon: {icon1:python, icon2:kotlin, icon3:csharp},
+    planet: "Earth",
   },
   {
     name:{tech1: "Git", tech2: "Figma", tech3:"Android Studio"},
     icon: {icon1:git, icon2:figma, icon3:andstud},
-    planet: "./planets/mercury/mercury.glb",
+    planet: "Mars",
+  },
+  {
+    name:{tech1: "ThreeJS", tech2: "Tailwind CSS", tech3:"Bootstrap"},
+    icon: {icon1:threejs, icon2:tailwind, icon3:bootstrap},
+    planet: "Jupiter",
   },
   {
     name:{tech1: "Java", tech2: "PHP", tech3:"JSON"},
     icon: {icon1:java, icon2:php, icon3:json},
-    planet: "./planets/mercury/mercury.glb",
+    planet: "Saturn",
+  },
+  {
+    name:{tech1: "MySQL", tech2: "XML", tech3:"Firebase"},
+    icon: {icon1:mysql, icon2:xml, icon3:firebase},
+    planet: "Uranus",
   },
 ];
 

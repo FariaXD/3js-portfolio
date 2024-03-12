@@ -24,8 +24,15 @@ import java from "./tech/java.png";
 import php from "./tech/php.png";
 import json from "./tech/json.png";
 import andstud from "./tech/andstud.png";
-
-
+import kotlin from "./tech/kotlin.png";
+import mysql from "./tech/mysql.png";
+import csharp from "./tech/csharp.png";
+import python from "./tech/python.png";
+import node from "./tech/node.png";
+import bootstrap from "./tech/bootstrap.png";
+import xml from "./tech/xml.png";
+import vite from "./tech/vite.png";
+import firebase from "./tech/firebase.png";
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -52,12 +59,21 @@ export {
   andstud,
   java,
   php,
+  python,
+  mysql,
+  csharp,
+  kotlin,
   json,
   html,
   javascript,
   mongodb,
   nodejs,
   reactjs,
+  firebase,
+  xml,
+  bootstrap,
+  node,
+  vite,
   redux,
   tailwind,
   typescript,
