@@ -1,12 +1,12 @@
 import React, { useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
 
-const Ship = (props) => {
+const ShipModel = ({ visible }) => {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("./ship/ship.glb");
   const { actions } = useAnimations(animations, group);
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
           <group
@@ -17,9 +17,9 @@ const Ship = (props) => {
               <group name="RootNode">
                 <group
                   name="Cube"
-                  position={[0, 28.554, -19.831]}
-                  rotation={[-Math.PI / 2, 0, 0]}
-                  scale={100}
+                  position={[0, 0, 0]}
+                  rotation={[-Math.PI / 2, 0, Math.PI/4]}
+                  scale={1}
                 >
                   <mesh
                     name="Cube_Material001_0"
@@ -27,6 +27,7 @@ const Ship = (props) => {
                     receiveShadow
                     geometry={nodes.Cube_Material001_0.geometry}
                     material={materials["Material.001"]}
+                    visible={visible}
                   />
                 </group>
               </group>
@@ -35,6 +36,15 @@ const Ship = (props) => {
         </group>
       </group>
     </group>
+  );
+}
+
+const Ship = ({visible}) => {
+
+  return (
+    <>
+      <ShipModel visible={visible}/>
+    </>
   );
 };
 

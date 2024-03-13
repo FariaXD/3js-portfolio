@@ -3,7 +3,7 @@
 /* eslint-disable react/no-unknown-property */
 import React, { Suspense, useEffect, useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF, Sphere } from "@react-three/drei";
+import { OrbitControls, Preload, useGLTF, Sphere, Sparkles } from "@react-three/drei";
 import Ship from "./Ship";
 import CanvasLoader from "../Loader";
 import Softskill from "./Softskill";
@@ -19,6 +19,7 @@ import {
   useCylinder,
   useConvexPolyhedron,
 } from "@react-three/cannon";
+import { softskills } from "../../constants";
 
 const Blackhole = ({ isMobile, active, setActive, setVisible }) => {
   const blackhole = useGLTF("./planets/blackhole/scene.gltf");
@@ -110,20 +111,19 @@ const BlackholeCanvas = ({ ref, active, setActive }) => {
           setVisible={setVisible}
           onClick={() => setVisible(!visible)}
         />
+        <Sparkles count={1000} scale={6} size={6} speed={0.1} />
         {/* <Ship/> */}
-
-        <Softskill
-          lsKey={"softskill"}
-          visible={visible}
-          x={Math.random() * 2 - 2}
-          y={Math.random() * 1 - 1}
-        />
-        <Softskill
-          lsKey={"softskill"}
-          visible={visible}
-          x={Math.random() * 2 - 2}
-          y={Math.random() * 1 - 1}
-        />
+        {softskills.map((softskill) => (
+          <Softskill
+            key={softskill.name}
+            name={softskill.name}
+            lsKey={"softskill"}
+            visible={visible}
+            x={softskill.positionx}
+            y={softskill.positiony}
+          />
+        ))}
+        <Ship visible={visible}/>
       </Suspense>
       <Preload all />
     </Canvas>

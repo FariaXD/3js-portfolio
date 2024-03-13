@@ -3,12 +3,12 @@ import { useFrame } from "@react-three/fiber";
 import { Text, Float } from "@react-three/drei";
 import * as THREE from "three";
 
-const Softskill = ({ lsKey, visible, x, y }) => {
+const Softskill = ({ name, lsKey, visible, x, y }) => {
   const ref = useRef();
   const mult = 1;
   const [posX, setX] = useState(x);
   const [posY, setY] = useState(y);
-  const maxScale = 0.4;
+  const maxScale = 0.2;
   const minScale = 0;
   const timeout = Math.random() * 3000 + 1000;
   const [readyToAppear, setReadyToAppear] = useState(false);
@@ -55,7 +55,7 @@ const Softskill = ({ lsKey, visible, x, y }) => {
           scale={1}
           visible={false}
         >
-          Softskill
+          {name}
         </Text>
       </Float>
     </>

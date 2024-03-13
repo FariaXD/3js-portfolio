@@ -68,6 +68,54 @@ const services = [
   },
 ];
 
+const softskills = [
+  {
+    name: "Communication",
+    positionx: 1,
+    positiony: 1,
+  },
+  {
+    name: "Teamwork",
+    positionx: -1,
+    positiony: -1,
+  },
+  {
+    name: "Problem Solving",
+    positionx: 0.9,
+    positiony: 0.5,
+  },
+  {
+    name: "Critical Thinking",
+    positionx: 2.8,
+    positiony: -1,
+  },
+  {
+    name: "Self-Motivation",
+    positionx: .5,
+    positiony: -.5,
+  },
+  {
+    name: "Adaptability",
+    positionx: -2.5,
+    positiony: .5,
+  },
+  {
+    name: "Autonomy",
+    positionx: 2,
+    positiony: 1.5,
+  },
+  {
+    name: "Attention to Detail",
+    positionx: -3,
+    positiony: 1.5,
+  },
+  {
+    name:"Dedication",
+    positionx: -3,
+    positiony: -1.5,
+  },
+]
+
 const technologies = [
   {
     name:{tech1: "HTML 5", tech2: "CSS 3", tech3:"JavaScript"},
@@ -254,4 +302,11 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  softskills,
+};
