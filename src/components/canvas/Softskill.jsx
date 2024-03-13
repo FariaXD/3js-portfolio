@@ -55,7 +55,7 @@ const Softskill = ({ lsKey, visible, x, y }) => {
           scale={1}
           visible={false}
         >
-          S
+          Softskill
         </Text>
       </Float>
     </>
