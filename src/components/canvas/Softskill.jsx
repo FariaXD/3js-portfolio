@@ -25,7 +25,6 @@ const Softskill = ({ name, lsKey, visible, x, y }) => {
   }, [visible, timeout]);
 
   useFrame((state, delta) => {
-    console.log(textState, visible, readyToAppear);
     if (visible && readyToAppear && textState == 0) {
       if (ref.current.fontSize > maxScale) {
         setTextState(1);
