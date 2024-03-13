@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {motion} from "framer-motion"
 import {styles} from "../styles"
-import { ComputersCanvas, StarsCanvas } from './canvas'
+import { BlackholeCanvas, StarsCanvas } from './canvas'
 
 const Hero = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -42,7 +42,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      {!isMobile && <ComputersCanvas/>}
+      {!isMobile && <BlackholeCanvas/>}
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>

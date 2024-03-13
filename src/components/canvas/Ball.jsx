@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { Decal, Float, useTexture, OrbitControls, Preload, Text, useGLTF, Icosahedron } from '@react-three/drei';
 import CanvasLoader from '../Loader';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader'
-import { Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus } from './balls/balls';
+import { Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus } from './Planet';
 
 const Ball = (props) => {
   return (
@@ -30,6 +30,8 @@ const BallCanvas = ({ icon, name, planet }) => {
       <OrbitControls
         enablePan={false}
         enableZoom={false}
+        maxPolarAngle={Math.PI / 2}
+        minPolarAngle={Math.PI / 2}
         autoRotate
       />
       <ambientLight intensity={1} />

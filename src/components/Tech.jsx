@@ -20,7 +20,7 @@ const Tech = () => {
           </div>
         ))}
       </div>
-      <p className={`${styles.sectionSubText} text-center`}>Press ball</p>
+      <p className={`${styles.sectionSubText} text-center`}>Press technology</p>
     </div>
   )
 }
