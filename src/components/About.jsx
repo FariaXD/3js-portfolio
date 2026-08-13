@@ -38,7 +38,12 @@ const About = () => {
       variants={fadeIn("", "", 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
     >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repellendus perspiciatis consequuntur! Unde, quos. Numquam consectetur asperiores voluptatum dolores vero vel, quibusdam exercitationem illum cumque? Voluptatum accusantium architecto pariatur eveniet.
+      I'm a Software Engineer based in Lisbon with two years of professional experience building Android
+      applications for the entertainment industry, from low-level audio and NDK integrations to full media
+      platforms. I work across the stack in Agile/Scrum teams within a DevOps environment, with a strong
+      testing discipline spanning unit, integration, screenshot, text-size and blackbox tests to keep
+      applications robust and secure. I'm currently leading AI-tooling adoption within my team to streamline
+      day-to-day development. Approachable, collaborative, and always learning - let's build something together.
     </motion.p>
     <div className="mt-20 flex flex-wrap gap-10">
       {services.map((service, index) => (

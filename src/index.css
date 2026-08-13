@@ -13,6 +13,24 @@
   color-scheme: dark;
 }
 
+.projects-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projects-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.projects-scroll::-webkit-scrollbar-thumb {
+  background: #915eff;
+  border-radius: 8px;
+}
+
+.projects-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #915eff transparent;
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

@@ -25,10 +25,6 @@ import {
   mobile,
   backend,
   creator,
-  starbucks,
-  meta,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -51,20 +47,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
+    title: "Android Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "AI Workflow Lead",
+    icon: creator,
+  },
+  {
+    title: "Game Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Web Developer",
+    icon: web,
   },
 ];
 
@@ -156,149 +152,147 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "BSc in Computer Science and Multimedia Engineering",
+    company_name: "ISEL – Instituto Superior de Engenharia de Lisboa",
+    icon: web,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "2019 - 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Bachelor's degree covering software engineering, multimedia and interactive systems.",
+      "Final project: a card-based turn-based roguelike mobile game built in Unity.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Android Developer — Interactive Lighting & Audio",
+    company_name: "Critical TechWorks (BMW)",
+    icon: mobile,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jun 2024 - Feb 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developer in a 6-person Scrum team building dynamic lighting effects that react in real time to audio input.",
+      "Implemented a settings UI in Jetpack Compose.",
+      "Built audio processing using FFT for real-time sound analysis.",
+      "Worked with Android NDK and C++ for performance-critical audio/lighting components.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Android Developer — Media Hub",
+    company_name: "Critical TechWorks (BMW)",
+    icon: andstud,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Feb 2025 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developer in a 12-person Scrum team building a full Android media hub spanning audio sources, games, video apps and TV.",
+      "Worked within a full MVVM architecture across the application.",
+      "Contributed to a comprehensive testing environment covering unit, integration, screenshot, text-size and blackbox tests.",
+      "Analysed bugs and coordinated with other teams to investigate and resolve cross-team issues.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "AI Workflow Lead (Internal Initiative)",
+    company_name: "Critical TechWorks (BMW)",
+    icon: creator,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "May 2026 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading the team's adoption of AI-assisted development, defining how the group integrates AI tools into daily workflows.",
+      "Mapped the entire project into smaller, well-scoped pieces of context, producing instruction files that make the codebase easy for AI agents to reason about.",
+      "Built a token-aware agent that reduces and optimizes credit/token usage across AI-assisted tasks.",
+      "Designed prompt-based automation for recurring work, including a bug-analysis tool and a self-service PR review tool.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+// No real testimonials yet - the Feedbacks section stays disabled in App.jsx
+// until there are genuine quotes to show.
+const testimonials = [];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Card-Based Roguelike Mobile Game",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Final degree project: a turn-based roguelike mobile game in which players use a card system to defeat enemies and progress through procedurally structured worlds.",
     tags: [
       {
-        name: "react",
+        name: "unity2d",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "csharp",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "aseprite",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/FariaXD/UnityMobileGame-FinalProject",
   },
   {
-    name: "Job IT",
+    name: "Restaurant Food Delivery App",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Android app for ordering food, viewing promotional offers, and tracking order and delivery history.",
     tags: [
       {
-        name: "react",
+        name: "kotlin",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "androidstudio",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/FariaXD/Restaurant-Android-App",
   },
   {
-    name: "Trip Guide",
+    name: "Machine Learning Race Car",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Self-driving race car agent trained with reinforcement learning to complete tracks without any human intervention.",
     tags: [
       {
-        name: "nextjs",
+        name: "unity",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "mlagents",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "csharp",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link:
+      "https://github.com/FariaXD/RacingCar-Unity-MachineLearning",
+  },
+  {
+    name: "AI Object-Seeking Agent",
+    description:
+      "Pathfinding agent that collects objects in a 2D environment using DFS, BFS and A* search strategies.",
+    tags: [
+      {
+        name: "java",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "processing",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "https://github.com/FariaXD/IASA",
   },
 ];
 

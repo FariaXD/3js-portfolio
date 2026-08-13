@@ -11,6 +11,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className='shrink-0 snap-start'
     >
       <Tilt
         options={{
@@ -18,7 +19,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
           scale: 1,
           speed: 450
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-[280px]'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -80,7 +81,7 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 flex flex-nowrap gap-7 overflow-x-auto snap-x snap-mandatory projects-scroll pb-6">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
